@@ -13,6 +13,16 @@ img {
   text-align: left;
 }
 
+.title {
+  flex: 0.3;
+}
+
+.addIcon {
+  flex: 0.3;
+  padding: 32px;
+  text-align: left;
+}
+
 .main-img {
   width: 300px;
   height: auto;

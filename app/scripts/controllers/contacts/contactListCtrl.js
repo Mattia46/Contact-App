@@ -1,5 +1,5 @@
 angular.module('contactsApp')
-  .controller('contactListController', function(api, $state){
+  .controller('contactListController', function(api, $state, $scope){
 
     var self = this;
 
@@ -13,6 +13,12 @@ angular.module('contactsApp')
 
     self.showContactDetail = function(contact){
       $state.go('contact-details', {contact: contact});
+    }
+
+    self.addContact = function(newContact, list){
+      $scope.addContact = false;
+      $scope.newContact = {};
+      return list.unshift(newContact);
     }
   });
 
