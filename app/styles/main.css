@@ -1,0 +1,75 @@
+img {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.contact-list {
+  /*margin-left: 20px;*/
+  padding: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-align: left;
+}
+
+.main-img {
+  width: 300px;
+  height: auto;
+}
+
+.img {
+  flex: 0.5;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.Grid {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.Grid-text {
+  flex: 0.3;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.Grid-img {
+  flex: 0.2;
+}
+
+
+.Grid-detail {
+  flex: 0.1;
+}
+
+.Grid-title {
+  flex: 0.3;
+  font-size: 26px;
+}
+
+.Grid-picture {
+  flex: 0.2;
+  font-size: 26px;
+}
+
+.contact {
+  flex: 0.5;
+  margin-top: 60px;
+}
+
+.contact-details {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}

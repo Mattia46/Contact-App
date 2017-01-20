@@ -1,5 +1,5 @@
 angular.module('contactsApp')
-  .controller('contactListController', function(api){
+  .controller('contactListController', function(api, $state){
 
     var self = this;
 
@@ -10,5 +10,9 @@ angular.module('contactsApp')
         console.log('error')
       })
     })();
+
+    self.showContactDetail = function(contact){
+      $state.go('contact-details', {contact: contact});
+    }
   });
 

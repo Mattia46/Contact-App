@@ -4,6 +4,7 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
     files: [
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js',
+      "http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css",
       'node_modules/angular-ui-router/release/angular-ui-router.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'app/*.js',

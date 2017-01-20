@@ -1,0 +1,17 @@
+<div class='container'>
+  <div class="img">
+    <img class='main-img' ng-src="{{contactDetailsCtrl.contact.avatar}}" />
+  </div>
+  <div class="contact">
+    <div class="contact-details">Name: <strong>{{ contactDetailsCtrl.contact.name }}</strong></div>
+    <div class="contact-details">Email: <strong>{{ contactDetailsCtrl.contact.email }}</strong></div>
+    <div class="contact-details">Job: <strong>{{ contactDetailsCtrl.contact.job }}</strong></div>
+    <div class="contact-details">Location: <strong>{{ contactDetailsCtrl.contact.location }}</strong></div>
+    <div class="contact-details">Tag: <strong>{{ contactDetailsCtrl.contact.tag }}</strong></div>
+  </div>
+  <div>
+    <a class="Grid-text" ng-click="contactDetailsCtrl.close()" >
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>

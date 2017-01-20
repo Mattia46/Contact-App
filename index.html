@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>Contact App</title>
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <link rel="stylesheet" href="app/styles/main.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/scripts/controllers/contacts/contactListCtrl.js"></script>
+    <script src="app/scripts/controllers/contacts/contactDetailsCtrl.js"></script>
     <script src="app/scripts/services/api.js"></script>
   </head>
   <body ng-app="contactsApp">
-    <h1>Contact App</h1>
     <div ui-view></div>
 
   </body>

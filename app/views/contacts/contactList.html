@@ -1,2 +1,26 @@
-<h1>Contact List</h1>
-{{ contactListCtrl.contactList }}
+<div class='contact-list'>
+  <h1>Contact List</h1>
+  <div class="bar">
+    <div class="Grid-picture">Picture </div>
+    <div class="Grid-title">Name </div>
+    <div class="Grid-title">Status </div>
+    <div class="Grid-title">Details</div>
+  </div>
+  <div class="divider"></div>
+  <div ng-repeat="contact in contactListCtrl.contactList track by $index">
+    <div class="Grid" flex>
+      <div class="Grid-img">
+        <img ng-src="{{contact.avatar}}" />
+      </div>
+      <div class="Grid-text">
+        <div >{{ contact.name }}</div>
+      </div>
+      <div class="Grid-text">
+        <div >{{ contact.email }}</div>
+      </div>
+      <a class="Grid-text" ng-click="contactListCtrl.showContactDetail(contact)" >
+        <i class="fa fa-address-card fa-2x"></i>
+      </a>
+    </div>
+  </div>
+</div>
