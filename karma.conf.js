@@ -3,7 +3,12 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'test/**/**/*.spec.js'
+      'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js',
+      'node_modules/angular-ui-router/release/angular-ui-router.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'app/*.js',
+      'app/scripts/**/**/*.js',
+      'test/**/**/*.spec.js',
     ],
     exclude: [
     ],

@@ -1,4 +1,4 @@
-angular.module('contactApp', ['ui.router'])
+angular.module('contactsApp', ['ui.router'])
 
   .config(function ($stateProvider, $urlRouterProvider) {
    $stateProvider

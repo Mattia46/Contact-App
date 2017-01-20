@@ -4,7 +4,7 @@
   "description": "Contact app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start karma.conf.js"
   },
   "author": "Mattia Assogna",
   "license": "ISC",
@@ -13,8 +13,10 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
-    "jasmine": "^2.5.3",
+    "angular-mocks": "^1.6.1",
+    "jasmine-core": "^2.5.2",
     "karma": "^1.4.0",
-    "karma-mocha": "^1.3.0"
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0"
   }
 }

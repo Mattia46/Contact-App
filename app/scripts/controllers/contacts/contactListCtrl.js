@@ -1,5 +1,14 @@
-angular.module('contactApp')
-  .controller('contactListController', function(){
+angular.module('contactsApp')
+  .controller('contactListController', function(api){
 
-    console.log('cicic');
-  })
+    var self = this;
+
+    (function(){
+      api.getContactList().then(function(data){
+        self.contactList = data;
+      }).catch(function(e){
+        console.log('error')
+      })
+    })();
+  });
+
