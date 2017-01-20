@@ -1,11 +1,12 @@
 angular.module('contactApp', ['ui.router'])
 
-  .config(function ($stateProvider) {
+  .config(function ($stateProvider, $urlRouterProvider) {
    $stateProvider
       .state('home', {
-        url: '/',
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'mainCtrl',
+        url: '/home',
+        templateUrl: 'app/views/contacts/contactList.html',
+        controller: 'contactListController',
+        controllerAs: 'contactListCtrl',
       });
+ $urlRouterProvider.otherwise('/home');
   });
