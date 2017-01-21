@@ -30,7 +30,7 @@ I am using Jasmine as a test framework, [Karma](https://karma-runner.github.io/0
 #### Clone the repo
 ```
 $ git clone https://github.com/Mattia46/Contact-App.git
-$ cd TalkTalk
+$ cd Contact-App
 ```
 
 #### Install webdriver and a server (I've used http-server)
