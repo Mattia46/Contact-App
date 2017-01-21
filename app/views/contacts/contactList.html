@@ -1,19 +1,19 @@
 <div class='contact-list'>
   <div class="Grid">
     <h1 class="title">Contact List</h1>
-    <a class="addIcon" ng-click="addContact=!addContact">
+    <a class="addIcon" id="addContactButton" ng-click="addContact=!addContact">
       <i class="fa fa-plus " aria-hidden="true"></i>
     </a>
   </div>
-  <div ng-show="addContact">
-    <input type='text' ng-model="newContact.name" placeholder="Insert a name">
-    <input type='text' ng-model="newContact.email" placeholder="Insert a email">
-    <input type='text' ng-model="newContact.job" placeholder="Insert a job">
-    <input type='text' ng-model="newContact.location" placeholder="Insert a location">
-    <input type='text' ng-model="newContact.tag" placeholder="Insert a tag">
-    <button ng-click="contactListCtrl.addContact(newContact, contactListCtrl.contactList)">Confirm</button>
+  <div ng-if="addContact" class="addContact">
+    <input class='newContact' type='text' ng-model="newContact.name" placeholder="Insert a name" />
+    <input class="newContact" type='text' ng-model="newContact.email" placeholder="Insert a email" />
+    <input class="newContact" type='text' ng-model="newContact.job" placeholder="Insert a job" />
+    <input class="newContact" type='text' ng-model="newContact.location" placeholder="Insert a location" />
+    <input class="newContact" type='text' ng-model="newContact.tag" placeholder="Insert a tag"/>
+    <button class="confirmButton" ng-click="contactListCtrl.addContact(newContact, contactListCtrl.contactList)">Confirm</button>
   </div>
-  <div ng-show="!addContact">
+  <div ng-if="!addContact">
     <div class="bar">
       <div class="Grid-picture">Picture </div>
       <div class="Grid-title">Name </div>

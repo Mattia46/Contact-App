@@ -42,6 +42,23 @@ img {
   margin-bottom: 10px;
 }
 
+.addContact {
+  display: flex;
+}
+
+.newContact {
+  flex: 0.18;
+  margin-right: 10px;
+  height: 25px;
+  font-size: 18px;
+  width: 30px;
+}
+
+.confirmButton {
+  flex: 0.09;
+  font-size: 18px;
+}
+
 .bar {
   display: flex;
   margin-bottom: 20px;
