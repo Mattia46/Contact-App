@@ -30,7 +30,7 @@ I am using Jasmine as a test framework, [Karma](https://karma-runner.github.io/0
 #### Clone the repo
 ```
 $ git clone https://github.com/Mattia46/Contact-App.git
-$ cd clothes-shop
+$ cd Contact-App
 ```
 
 #### Install webdriver and a server (I've used http-server)
@@ -45,7 +45,7 @@ $ npn install
 
 ## How to run functional test:
 
-* Run the webdriver manager and http-server
+* Run the webdriver manager
 ```
 $ npm start
 $ webdriver-manager start
@@ -63,11 +63,11 @@ $ npm test
 ## Webpage:
   ```
 $ npm start
-http://localhost:8080/
+http://localhost:3000/
 ```
 ## Notable issues
 
-* Although all the tests still pass, there are also not as many protractor tests as I would like to have because even if
+* Although all the tests pass, there are also not as many protractor tests as I would like to have because even if
   I allowed the CORS in the api headers, the response to preflight request doesn't pass access control check.
   In the Chrome browser I have used Allow-Control-Allow-Origin: * plugin
 
