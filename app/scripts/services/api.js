@@ -14,7 +14,7 @@ angular.module('contactsApp')
         defer.resolve(response.data)
       }).catch(function(response){
         defer.reject(response);
-        console.error('error', response)
+        console.error('api request error', response)
       })
       return defer.promise;
     };
