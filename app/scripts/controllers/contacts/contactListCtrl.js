@@ -7,7 +7,6 @@ angular.module('contactsApp')
       api.getContactList().then(function(data){
         self.contactList = data;
       }).catch(function(e){
-        console.log('error')
       })
     })();
 
