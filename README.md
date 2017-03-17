@@ -34,9 +34,9 @@ $ cd Contact-App
 ```
 
 #### Install webdriver and a server (I've used http-server)
-  ```
+```
 $ webdriver-manager update
-  ```
+```
 
 ####  Install the dependencies
 ```
@@ -51,25 +51,25 @@ $ npm start
 $ webdriver-manager start
 ```
 * Run protractor from the main folder
-  ```
+```
 $ protractor test/e2e/conf.js
-  ```
+```
 
 ## How to run the unit test:
 ```
 $ npm test
-  ```
+```
 
 ## Webpage:
-  ```
+```
 $ npm start
 http://localhost:3000/
 ```
 ## Notable issues
 
 * Although all the tests pass, there are also not as many protractor tests as I would like to have because even if
-  I allowed the CORS in the api headers, the response to preflight request doesn't pass access control check.
-  In the Chrome browser I have used Allow-Control-Allow-Origin: * plugin
+I allowed the CORS in the api headers, the response to preflight request doesn't pass access control check.
+In the Chrome browser I have used Allow-Control-Allow-Origin: * plugin
 
 ## Troubleshooting:
 * If webdriver refuse to connect, that means that the chrome version used is not compatible. You need to update it:
